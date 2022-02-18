@@ -9,11 +9,9 @@ int main()
     _tprintf(_T("input source:"));
     _fgetts(source, MAX_PATH, stdin);
     source[_tcslen(source) - 1] = 0;
-    //while (getchar() != '\n');
     _tprintf(_T("input target:"));
     _fgetts(target, MAX_PATH, stdin);
     target[_tcslen(target) - 1] = 0;
-    //while (getchar() != '\n');
     DWORD attributes = GetFileAttributes(source);
     if (attributes == INVALID_FILE_ATTRIBUTES)
     {
